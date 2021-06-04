@@ -40,7 +40,7 @@ body {
   background-position: center;
   display: block;
   filter: blur(10px);
-  transition: filter 1000ms;
+  transition: all 1000ms;
 }
 .teapot1:hover::after {
   filter: blur(0px);
@@ -58,7 +58,7 @@ body {
   left: 50%;
 
   text-align: center;
-  transition: filter 1000ms;
+  transition: all 1000ms;
   transform: translate(-50%, -50%);
 }
 .content:hover {
