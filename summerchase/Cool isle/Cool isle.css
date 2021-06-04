@@ -1,10 +1,25 @@
+/* width */
+::-webkit-scrollbar {
+  width: 6.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(44, 194, 214);
+}
+
 body,
 html {
   height: 100%;
-  margin: 0;
+  margin: 0%;
   font-size: 16px;
   font-family: "Brush Script MT", cursive;
-  font-weight: 400;
+  font-weight: 400px;
   line-height: 1.8em;
   color: #666;
 }
@@ -46,7 +61,6 @@ scroll = normal
 }
 
 .section {
-  text-align: center;
   padding: 50px 80px;
 }
 
@@ -79,6 +93,30 @@ scroll = normal
 
 .ptext .border.trans {
   background-color: transparent;
+}
+.hutao {
+  height: 175px;
+  margin-right: 50px;
+}
+.grid {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.grid.reverse {
+  flex-direction: row-reverse;
+}
+.ning {
+  height: 175px;
+  margin-left: 50px;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
 }
 
 @media (max-width: 568px) {

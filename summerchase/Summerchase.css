@@ -75,7 +75,6 @@ body {
 .content .text {
   line-height: 1.7;
   margin-top: 1rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .container {
   max-width: 960px;
@@ -91,7 +90,9 @@ body {
   text-align: center;
   font-family: "Kalam", cursive;
   font-size: 15px;
+  align-items: center;
 }
+
 h3 {
   font-family: "Brush Script MT";
   font-size: 30px;
