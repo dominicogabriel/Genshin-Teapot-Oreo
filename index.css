@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+/* width */
+::-webkit-scrollbar {
+  width: 6.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(44, 194, 214);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+body {
+  background: rgba(0, 0, 0, 0.9);
+  margin: 0%;
+  color: #fff;
+}
+
+.teapot1::after {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  background-image: url(Aether.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  filter: blur(10px);
+  transition: filter 1000ms;
+}
+.teapot1:hover::after {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+.teapot1:hover .content {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.content {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+
+  text-align: center;
+  transition: filter 1000ms;
+  transform: translate(-50%, -50%);
+}
+.content:hover {
+  filter: blur(0px) !important;
+  -webkit-filter: blur(0px) !important;
+}
+.content .logo {
+  height: 100px;
+  width: 120px;
+}
+.content .title {
+  font-size: 2.2rem;
+  margin-top: 3rem;
+  font-family: "Odibee Sans", cursive;
+}
+.content .text {
+  line-height: 1.7;
+  margin-top: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.center {
+  text-align: center;
+  margin: auto;
+}
+.footer {
+  padding: 2.2rem;
+}
+footer p {
+  margin: 0;
+  font-family: "Brush Script MT";
+}
+/* Small Screens */
+/* @media (max-width: 560px) {
+  .teapot1::after {
+    height: 50vh;
+    margin: 5px;
+  }
+  .content {
+    top: 5%;
+    margin-top: 5px;
+  }
+
+  .content .logo {
+    height: 140px;
+    width: 140px;
+  }
+  .content .text {
+    display: none;
+  }
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+/* Landcape */
+@media (max-height: 500px) {
+  /* .content .title,
+  .content {
+    top: 5%;
+  } */
+}
