@@ -129,4 +129,16 @@ scroll = normal
   .ptext .border.ph {
     line-height: 50px;
   }
+  * {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+    margin: 0%;
+  }
+  img {
+    margin-bottom: 20px;
+  }
+  video {
+    margin-bottom: 20px;
+  }
 }
